@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import API from '../utils/api';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
+import bg from '../assets/bg.png'; // ✅ IMPORT THE IMAGE
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -24,7 +25,16 @@ const Login = () => {
   };
 
   return (
-    <div className="auth-wrapper">
+    <div
+      className="auth-wrapper"
+      style={{
+        backgroundImage: `url(${bg})`, // ✅ USE IMPORTED IMAGE HERE
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+      }}
+    >
       <div className="container">
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
