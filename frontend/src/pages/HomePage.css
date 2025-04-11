@@ -1,28 +1,11 @@
 .home-page {
-    background-image: url('C:/Users/navya/OneDrive/Desktop/gift-recommendation-app/frontend/public/assets/bg.png');  /* <-- PNG path */
-    background-size: cover;
-    background-position: center;
-    min-height: calc(100vh - 64px); /* adjust for navbar */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
   
-  .center-content {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-  
-  .center-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .center-content p {
-    font-size: 1.25rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
